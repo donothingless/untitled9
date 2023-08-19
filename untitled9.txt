@@ -1,0 +1,35 @@
+
+public partial class Design : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        ViewState["Name"] = TextBox1.Text;
+        ViewState["Deptno"] = TextBox2.Text;
+        ViewState["class"] = TextBox3.Text;
+        ViewState["D.O.B"] = TextBox4.Text;
+        ViewState["Area of Interest"] = TextBox5.Text; 
+        ViewState["Languages Known"] = TextBox6.Text;
+        ViewState["Hobbies"] = TextBox7.Text;
+        ViewState["Address"] = TextBox8.Text;
+        ViewState["E-mail Id"] = TextBox9.Text;
+        ViewState["Mobile"] = TextBox10.Text;
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        TextBox11.Text = Convert.ToString(ViewState["Name"]);
+        TextBox12.Text = Convert.ToString(ViewState["Deptno"]);
+        TextBox13.Text = Convert.ToString(ViewState["class"]);
+        TextBox14.Text = Convert.ToString(ViewState["D.O.B"]);
+        TextBox15.Text = Convert.ToString(ViewState["Area of Interest"]);
+        TextBox16.Text = Convert.ToString(ViewState["Languages Known"]);
+        TextBox17.Text = Convert.ToString(ViewState["Hobbies"]);
+        TextBox18.Text = Convert.ToString(ViewState["Address"]);
+        TextBox19.Text = Convert.ToString(ViewState["E-mail Id"]);
+        TextBox20.Text = Convert.ToString(ViewState["Mobile"]);
+
+    }
+}
